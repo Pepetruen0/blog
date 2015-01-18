@@ -1,0 +1,53 @@
+.catlist {
+  background-color: #202020;
+  padding: 4px;
+}
+
+nav {
+
+  @include container;
+
+  li {
+    display: inline;
+    a {
+      font-family: Arial, helvetica;
+      text-transform: uppercase;
+      font-size: 10px;
+      color: #b2b2b2;
+      text-decoration: none;
+      margin-right: 25px;
+
+      &:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+  }
+
+}
+
+.header {
+  margin-top: 15px;
+  @include container;
+  @include clearfix();
+
+  .logo {
+    @include span(4 of 12);
+    padding:10px;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    height: 120px;
+  }
+
+  .other {
+    padding:10px;
+    @include span(8 of 12 at 5);
+//    background-image: url("../images/ad.png");
+//    background-repeat: no-repeat;
+//    height: 90px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
