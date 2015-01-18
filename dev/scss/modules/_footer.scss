@@ -1,5 +1,5 @@
 footer {
-  @include clearfix();
+  // @include clearfix();
   background-color: #202020;
   .footerCont {
     @include container;
@@ -11,10 +11,10 @@ footer {
       @include span(4 of 12);
     }
     .footerCol2 {
-      @include span(4 of 12 at 5);
+      @include span(4 of 12);
     }
     .footerCol3 {
-      @include span(4 of 12 at 9 last);
+      @include span(4 of 12 last);
     }
   }
 }

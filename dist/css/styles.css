@@ -278,13 +278,6 @@ nav li a:hover {
 footer {
   background-color: #202020;
 }
-footer:before, footer:after {
-  content: "";
-  display: table;
-}
-footer:after {
-  clear: both;
-}
 footer .footerCont {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
