@@ -1,14 +1,31 @@
 .catlist {
   background-color: #202020;
-  padding: 4px;
+  padding: 0;
+
+  @include breakpoint($medium) {
+    padding: 4px;
+  }
 }
 
 nav {
 
   @include container;
 
+
   li {
-    display: inline;
+    display: block;
+    height: 25px;
+    border-bottom: 1px solid #b2b2b2;
+    padding: 5px;
+
+    @include breakpoint($medium) {
+      display: inline;
+      border: none;
+    }
+
+    &:last-child {
+      border: none;
+    }
     a {
       font-family: Arial, helvetica;
       text-transform: uppercase;
