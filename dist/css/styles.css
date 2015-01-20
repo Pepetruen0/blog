@@ -99,7 +99,7 @@ nav li {
   display: block;
   height: 25px;
   border-bottom: 1px solid #b2b2b2;
-  padding: 5px;
+  padding-top: 15px;
 }
 @media (min-width: 491px) {
   nav li {
@@ -116,7 +116,16 @@ nav li a {
   font-size: 10px;
   color: #b2b2b2;
   text-decoration: none;
-  margin-right: 25px;
+  display: block;
+  text-align: center;
+  width: auto;
+}
+@media (min-width: 491px) {
+  nav li a {
+    display: inline;
+    text-align: left;
+    margin-right: 25px;
+  }
 }
 nav li a:hover {
   text-decoration: underline;

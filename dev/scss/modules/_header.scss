@@ -16,7 +16,7 @@ nav {
     display: block;
     height: 25px;
     border-bottom: 1px solid #b2b2b2;
-    padding: 5px;
+    padding-top: 15px;
 
     @include breakpoint($medium) {
       display: inline;
@@ -32,7 +32,17 @@ nav {
       font-size: 10px;
       color: #b2b2b2;
       text-decoration: none;
-      margin-right: 25px;
+      display: block;
+      text-align: center;
+      width: auto;
+
+      @include breakpoint($medium) {
+        display: inline;
+        text-align: left;
+        // width: auto;
+        margin-right: 25px;
+      }
+
 
       &:hover {
         text-decoration: underline;
@@ -58,7 +68,7 @@ nav {
 
   .other {
     padding:10px;
-    @include span(8 of 12 at 5);
+    @include span(8 of 12 at 5 last);
 //    background-image: url("../images/ad.png");
 //    background-repeat: no-repeat;
 //    height: 90px;
