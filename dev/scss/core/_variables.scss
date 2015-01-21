@@ -1,4 +1,5 @@
 $bgcolor: #e1e3e4;
+$darkBG: #202020;
 $fontcolor: #313131;
 
 #{headings(1)} {
@@ -18,6 +19,9 @@ $susy: (
         output: float,
         gutter-position: after,
         box-sizing: border-box,
+        use-custom: (
+                clearfix: true
+        )
 );
 
 
@@ -26,6 +30,3 @@ $susy: (
 **    Breakpoints
 **
 * * * * * * * * * * * */
-
-$small: 0px 490px;
-$medium: 491px;

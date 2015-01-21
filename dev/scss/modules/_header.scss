@@ -1,80 +1,55 @@
 .catlist {
-  background-color: #202020;
+  background-color: $darkBG;
   padding: 0;
 
-  @include breakpoint($medium) {
-    padding: 4px;
-  }
-}
+  ul {
+    li {
+      border-bottom: 1px solid #b2b2b2;
+      padding: 10px;
 
-nav {
+      a {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        font-family: Arial, helvetica;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #b2b2b2;
+        text-decoration: none;
 
-  @include container;
-
-
-  li {
-    display: block;
-    height: 25px;
-    border-bottom: 1px solid #b2b2b2;
-    padding-top: 15px;
-
-    @include breakpoint($medium) {
-      display: inline;
-      border: none;
-    }
-
-    &:last-child {
-      border: none;
-    }
-    a {
-      font-family: Arial, helvetica;
-      text-transform: uppercase;
-      font-size: 10px;
-      color: #b2b2b2;
-      text-decoration: none;
-      display: block;
-      text-align: center;
-      width: auto;
-
-      @include breakpoint($medium) {
-        display: inline;
-        text-align: left;
-        // width: auto;
-        margin-right: 25px;
-      }
-
-
-      &:hover {
-        text-decoration: underline;
-        color: #fff;
-      }
-    }
-  }
-
-}
+        &:hover {
+          color: #fff;
+          text-decoration: underline;
+        } // End hover
+      } // End a
+    } // End li
+  } // End ul
+} // End catlist
 
 .header {
-  margin-top: 15px;
   @include container;
   @include clearfix();
 
   .logo {
-    @include span(4 of 12);
-    padding:10px;
-    background-image: url("../images/logo.png");
-    background-repeat: no-repeat;
-    height: 120px;
-  }
+    @include span(1 of 1);
 
-  .other {
-    padding:10px;
-    @include span(8 of 12 at 5 last);
-//    background-image: url("../images/ad.png");
-//    background-repeat: no-repeat;
-//    height: 90px;
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      max-height: 100%;
+    } // End img
+  } // End logo
+
+  .banner {
+    @include span(1 of 1);
 
     img {
       max-width: 100%;
-    }
-  }
-}
+      max-height: 100%;
+      margin: 0 auto;
+    } // End img
+  } // End banner
+} // End header
+
+
