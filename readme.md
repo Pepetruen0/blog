@@ -7,9 +7,9 @@ Just clone and run npm install so you get the main npm modules. Afterwards, you 
 
 ##To do:
 - Add a secondary catlist area
-- Implement breakpoint
-- Add responsiveness
-- Fix footer
+- ~~Implement breakpoint~~
+- ~~Add responsiveness~~
+- ~~Fix footer~~
 - Create single post view
 - Fix typography
 - Implement vertical rhythm
