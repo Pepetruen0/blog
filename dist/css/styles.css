@@ -65,6 +65,17 @@ h1 {
 **    Breakpoints
 **
 * * * * * * * * * * * */
+/******************
+/*
+/* Vertical align
+/* Usage:
+/*
+/*  .selector {
+/*     @include vertical-align;
+/*  }
+/*
+/*
+/*****************/
 body {
   background-color: #e2e8f2;
   color: #161718;
@@ -291,12 +302,13 @@ a:hover {
 .header:after {
   clear: both;
 }
-.header:before, .header:after {
-  content: "";
-  display: table;
-}
-.header:after {
-  clear: both;
+@media (min-width: 640px) {
+  .header {
+    margin-top: 80px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
 }
 .header .logo {
   -moz-box-sizing: border-box;
@@ -321,6 +333,11 @@ a:hover {
     width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 .header .banner {
@@ -332,20 +349,25 @@ a:hover {
   margin-left: 0;
   margin-right: 0;
 }
-.header .banner img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
 @media (min-width: 640px) {
-  .header .banner img {
+  .header .banner {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 66.10169%;
     float: right;
     margin-right: 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
+}
+.header .banner img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .post img {
@@ -414,6 +436,8 @@ a:hover {
 
 footer {
   background-color: #202020;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .footerCont {
