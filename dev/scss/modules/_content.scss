@@ -28,3 +28,33 @@
     @include span(4 of 12 last);
   }
 }
+
+.post {
+  margin:0 0 20px 0;
+  @include container;
+  background-color: $contentBg;
+  padding: 0;
+
+  img {
+    @include span(4 of 12);
+  }
+
+  .meta {
+    @include span(8 of 12 last);
+    padding: 15px;
+  }
+
+  .excerpt {
+
+    display: none;
+
+    @include breakpoint($medium) {
+      display: block;
+    }
+  }
+
+  .readmore {
+    margin-top: 10px;
+    text-align: right;
+  }
+}

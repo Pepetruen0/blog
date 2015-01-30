@@ -79,7 +79,7 @@ h1 {
 /*
 /*****************/
 body {
-  background-color: #eeeeee;
+  background-color: #ffffff;
   color: #212121;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -94,12 +94,12 @@ body {
 }
 
 a {
-  color: #161718;
+  color: #039be5;
   text-decoration: none;
 }
 a:hover {
-  text-decoration: none;
-  color: #5a5d61;
+  text-decoration: underline;
+  color: #039be5;
 }
 
 .bgCont {
@@ -438,6 +438,54 @@ a:hover {
     float: right;
     margin-right: 0;
   }
+}
+
+.post {
+  margin: 0 0 20px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eeeeee;
+  padding: 0;
+}
+.post:before, .post:after {
+  content: "";
+  display: table;
+}
+.post:after {
+  clear: both;
+}
+.post img {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+}
+.post .meta {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+  padding: 15px;
+}
+.post .excerpt {
+  display: none;
+}
+@media (min-width: 640px) {
+  .post .excerpt {
+    display: block;
+  }
+}
+.post .readmore {
+  margin-top: 10px;
+  text-align: right;
 }
 
 footer {
