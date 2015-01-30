@@ -1,107 +1,29 @@
+.post img {
+  width: 80px;
+  height: 80px;
+  //float: left;
+  margin-right: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
 .mainContainer {
-  margin-top: 20px;
   @include container;
-  @include clearfix();
+}
 
-  .content {
+
+.content {
+  @include span(12 of 12);
+
+  @include breakpoint($medium) {
     @include span(8 of 12);
-    background-color: #fff;
-    padding: 20px;
-
-    .post {
-
-      @include container;
-      @include clearfix();
-      border-bottom: 1px solid $bgcolor;
-      margin: 0 0 20px 0;
-      padding: 0 0 20px 0;
-
-      &:last-of-type {
-        border: none;
-        padding-bottom: 0;
-        margin-bottom: 0;
-      }
-
-      img {
-        width: 190px;
-        height: 190px;
-        float: left;
-        margin-right: 15px;
-        max-width: 100%;
-      }
-
-      time {
-        font-size: 10px;
-      }
-
-      .catSpan {
-        font-size: 10px;
-
-        &:before {
-          content: " - ";
-        }
-
-        a {
-          color: #1f638a;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      h1{
-        font-weight: bold;
-        margin-bottom: 5px;
-
-        a {
-          color: #343434;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      cite {
-        font-size: 10px;
-
-        a {
-          text-decoration: none;
-          color: #1f638a;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      .excerpt {
-        margin-top: 10px;
-      }
-
-      .readmore {
-        margin-top: 40px;
-        text-align: right;
-
-        a {
-          color: #1f638a;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-
   }
+}
 
-  .sidebar {
-    @include span(4 of 12 at 9);
-    background-color: #fff;
-    padding: 20px;
+.sidebar {
+  @include span(12 of 12);
+
+  @include breakpoint($medium) {
+    @include span(4 of 12 last);
   }
 }

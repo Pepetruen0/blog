@@ -1,0 +1,20 @@
+footer {
+  // @include clearfix();
+  background-color: #202020;
+  .footerCont {
+    @include container;
+    @include clearfix();
+    padding: 20px 0 20px 0;
+    margin-top: 20px;
+
+    .footerCol {
+      @include span(4 of 12);
+    }
+    .footerCol2 {
+      @include span(4 of 12);
+    }
+    .footerCol3 {
+      @include span(4 of 12 last);
+    }
+  }
+}

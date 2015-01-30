@@ -2,5 +2,20 @@ body {
   background-color: $bgcolor;
   color: $fontcolor;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  letter-spacing: -0.8;
+}
+
+a {
+  color: #161718;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: #5a5d61;
+  }
 }
