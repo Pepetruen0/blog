@@ -1,0 +1,29 @@
+.post img {
+  width: 80px;
+  height: 80px;
+  //float: left;
+  margin-right: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mainContainer {
+  @include container;
+}
+
+
+.content {
+  @include span(12 of 12);
+
+  @include breakpoint($medium) {
+    @include span(8 of 12);
+  }
+}
+
+.sidebar {
+  @include span(12 of 12);
+
+  @include breakpoint($medium) {
+    @include span(4 of 12 last);
+  }
+}

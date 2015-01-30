@@ -1,0 +1,20 @@
+footer {
+  background-color: #202020;
+}
+
+.footerCont {
+  @include container;
+}
+
+.footerCol{
+
+  @include span(12 of 12);
+
+  @include breakpoint($medium) {
+
+    @include span(4 of 12);
+    &:last-of-type {
+      @include span(4 of 12 last);
+    }
+  }
+}

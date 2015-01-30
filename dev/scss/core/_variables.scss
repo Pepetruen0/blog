@@ -1,11 +1,14 @@
-$bgcolor: #e1e3e4;
+// $bgcolor: #e1e3e4;
+$bgcolor: #e2e8f2;
 $darkBG: #202020;
-$fontcolor: #313131;
+$fontcolor: #161718;
+$bodyFont: Roboto, Helvetica, sans-serif;
+
 
 #{headings(1)} {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 25px;
-        color: #343434;
+        font-family: Roboto, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
 }
 
 
@@ -30,3 +33,6 @@ $susy: (
 **    Breakpoints
 **
 * * * * * * * * * * * */
+
+$medium: 640px;
+

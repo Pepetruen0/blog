@@ -1,31 +1,6 @@
-.catlist {
-  background-color: $darkBG;
-  padding: 0;
 
-  ul {
-    li {
-      border-bottom: 1px solid #b2b2b2;
-      padding: 10px;
 
-      a {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-        font-family: Arial, helvetica;
-        text-transform: uppercase;
-        font-size: 10px;
-        color: #b2b2b2;
-        text-decoration: none;
-
-        &:hover {
-          color: #fff;
-          text-decoration: underline;
-        } // End hover
-      } // End a
-    } // End li
-  } // End ul
-} // End catlist
-
+// HEADER STUFF, DO NOT TOUCH!!!
 .header {
   @include container;
   @include clearfix();
@@ -37,8 +12,13 @@
       display: block;
       margin: 0 auto;
       max-width: 100%;
-      max-height: 100%;
+      height: auto;
     } // End img
+
+    @include breakpoint($medium) {
+      @include span(4 of 12);
+    }
+
   } // End logo
 
   .banner {
@@ -46,8 +26,12 @@
 
     img {
       max-width: 100%;
-      max-height: 100%;
+      height: auto;
       margin: 0 auto;
+
+      @include breakpoint($medium) {
+        @include span(8 of 12 last);
+      }
     } // End img
   } // End banner
 } // End header
