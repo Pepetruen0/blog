@@ -11,5 +11,5 @@ Just clone and run npm install so you get the main npm modules. Afterwards, you 
 - ~~Add responsiveness~~
 - ~~Fix footer~~
 - Create single post view
-- Fix typography
+- ~~Fix typography~~
 - Implement vertical rhythm

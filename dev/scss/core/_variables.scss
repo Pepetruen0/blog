@@ -1,14 +1,18 @@
 // $bgcolor: #e1e3e4;
-$bgcolor: #e2e8f2;
+// $bgcolor: #e2e8f2;
+$bgcolor: #eeeeee;
 $darkBG: #202020;
-$fontcolor: #161718;
+$fontcolor: #212121;
+$footerFontColor: #ffffff;
 $bodyFont: Roboto, Helvetica, sans-serif;
 
 
 #{headings(1)} {
         font-family: Roboto, Helvetica, sans-serif;
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 34px;
+        font-weight: 300;
+        color: #039be5;
+        line-height: 40px;
 }
 
 
