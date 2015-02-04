@@ -1,0 +1,62 @@
+.icons {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+  margin-bottom: 25px;
+
+  h2 {
+    display: block;
+    border-bottom: 2px solid #e0e0e0;
+  }
+}
+
+.social {
+  list-style: none;
+  margin-top: 25px;
+  @include container;
+}
+
+.social li{
+  display:block;
+  float: left;
+  margin:0;
+  padding:0;
+
+  @include span(3 of 12);
+
+  &:last-of-type {
+    @include span(3 of 12 last);
+  }
+}
+
+.social li a{
+  -webkit-transition:all 0.2s ease 0s;
+  -moz-transition:all 0.2s ease 0s;
+  -o-transition:all 0.2s ease 0s;
+  transition:all 0.2s ease 0s;
+  display:block;
+  width:40px;
+  height:40px;
+  text-indent:-9999px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.social a:hover{
+  background-color: #cccccc;
+  background-position: 0px -40px !important;
+  opacity: 1;
+}
+
+.facebook a { background: url(../images/icons/facebook.png) no-repeat 0 0 }
+.facebook a:hover { background-color: #3b5998 }
+
+.twitter a { background: url(../images/icons/twitter.png) no-repeat 0 0 }
+.twitter a:hover { background-color: #48c4d2 }
+
+.googleplus a { background: url(../images/icons/googleplus.png) no-repeat 0 0 }
+.googleplus a:hover { background-color: #d94a39 }
+
+.rss a { background: url(../images/icons/rss.png) no-repeat 0 0 }
+.rss a:hover { background-color: #fe9900 }

@@ -11,7 +11,11 @@
 </head>
 <body>
 
-<div class="bgCont">
+    <div class="header">
+        <div class="logo"><img src="images/logo.png" alt="Logo"/></div>
+        <div class="banner"><img src="images/ad.png" alt="Ad"/></div>
+    </div>
+
     <div class="navCont">
         <nav class="nav-collapse">
             <ul>
@@ -23,12 +27,6 @@
             </ul>
         </nav>
     </div>
-</div>
-
-        <div class="header">
-            <div class="logo"><img src="images/logo.png" alt="Logo"/></div>
-            <div class="banner"><img src="images/ad.png" alt="Ad"/></div>
-        </div>
 
         <div class="mainContainer">
 
@@ -198,6 +196,18 @@
 
             </div>
             <div class="sidebar">
+
+                <div class="icons">
+
+                    <h2>Keep in touch!</h2>
+                    <ul class="social">
+                        <li class="facebook"><a class="tooltip" target="_blank" href="http://facebook.com" title="Facebook"></a></li>
+                        <li class="twitter"><a class="tooltip" target="_blank" href="http://twitter.com" title="twitter"></a></li>
+                        <li class="googleplus"><a class="tooltip" target="_blank" href="http://plus.google.com" title="Google+"></a></li>
+                        <li class="rss"><a class="tooltip" target="_blank" href="http://rss.com" title="rss"></a></li>
+                    </ul>
+                </div>
+
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit in quam recusandae voluptate? Amet architecto
                     beatae deleniti dolorem eos facere fugiat, libero officiis ratione rem. Alias aperiam corporis reiciendis.
                     Ipsum?</p>
@@ -247,6 +257,16 @@
         open: function(){},               // Function: Open callback
         close: function(){}               // Function: Close callback
     });
+
+    $(document).ready(function() {
+        $('.tooltip').tooltipster({
+            theme: 'tooltipster-shadow',
+            offsetY: 60
+        });
+
+    });
+
+
 </script>
 
 </body>

@@ -2,8 +2,9 @@
 .header {
   @include container;
 
+
   @include breakpoint($medium) {
-    margin-top: 80px;
+    margin-top: 60px;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;

@@ -1,3 +1,4 @@
+/* line 5, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,44 +20,62 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
+/* line 11, ../../dev/scss/core/_variables.scss */
 h1 {
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 34px;
+  font-weight: 300;
+  color: #039be5;
+  line-height: 40px;
+}
+
+/* line 19, ../../dev/scss/core/_variables.scss */
+h2, h3, h4, h5, h6 {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 25px;
   font-weight: 300;
   color: #039be5;
   line-height: 40px;
@@ -78,8 +97,9 @@ h1 {
 /*
 /*
 /*****************/
+/* line 1, ../../dev/scss/core/_base.scss */
 body {
-  background-color: #ffffff;
+  background-color: #eeeeee;
   color: #212121;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
@@ -93,20 +113,24 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* line 16, ../../dev/scss/core/_base.scss */
 a {
   color: #039be5;
   text-decoration: none;
 }
+/* line 20, ../../dev/scss/core/_base.scss */
 a:hover {
   text-decoration: underline;
   color: #039be5;
 }
 
+/* line 1, ../../dev/scss/modules/_nav.scss */
 .bgCont {
   background-color: #202020;
 }
 
 /*! responsive-nav.js 1.0.34 by @viljamis */
+/* line 11, ../../dev/scss/modules/_nav.scss */
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -115,11 +139,13 @@ a:hover {
   list-style: none;
 }
 
+/* line 19, ../../dev/scss/modules/_nav.scss */
 .nav-collapse li {
   width: 100%;
   display: block;
 }
 
+/* line 24, ../../dev/scss/modules/_nav.scss */
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
@@ -129,10 +155,12 @@ a:hover {
   zoom: 1;
 }
 
+/* line 33, ../../dev/scss/modules/_nav.scss */
 .nav-collapse.opened {
   max-height: 9999px;
 }
 
+/* line 37, ../../dev/scss/modules/_nav.scss */
 .nav-toggle {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -144,18 +172,22 @@ a:hover {
 }
 
 @media screen and (min-width: 640px) {
+  /* line 48, ../../dev/scss/modules/_nav.scss */
   .js .nav-collapse {
     position: relative;
   }
 
+  /* line 51, ../../dev/scss/modules/_nav.scss */
   .js .nav-collapse.closed {
     max-height: none;
   }
 
+  /* line 54, ../../dev/scss/modules/_nav.scss */
   .nav-toggle {
     display: none;
   }
 
+  /* line 58, ../../dev/scss/modules/_nav.scss */
   .navCont {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -164,14 +196,17 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  /* line 9, ../../dev/scss/core/_mixins.scss */
   .navCont:before, .navCont:after {
     content: "";
     display: table;
   }
+  /* line 14, ../../dev/scss/core/_mixins.scss */
   .navCont:after {
     clear: both;
   }
 }
+/* line 67, ../../dev/scss/modules/_nav.scss */
 .fixed {
   position: fixed;
   width: 100%;
@@ -179,6 +214,7 @@ a:hover {
   left: 0;
 }
 
+/* line 74, ../../dev/scss/modules/_nav.scss */
 .nav-collapse,
 .nav-collapse * {
   -moz-box-sizing: border-box;
@@ -186,6 +222,7 @@ a:hover {
   box-sizing: border-box;
 }
 
+/* line 81, ../../dev/scss/modules/_nav.scss */
 .nav-collapse,
 .nav-collapse ul {
   list-style: none;
@@ -194,12 +231,14 @@ a:hover {
   background-color: #202020;
 }
 
+/* line 89, ../../dev/scss/modules/_nav.scss */
 .nav-collapse li {
   float: left;
   width: 100%;
 }
 
 @media screen and (min-width: 640px) {
+  /* line 95, ../../dev/scss/modules/_nav.scss */
   .nav-collapse li {
     width: 15%;
     *width: 14.9%;
@@ -208,6 +247,7 @@ a:hover {
     /* IE6 Hack */
   }
 }
+/* line 102, ../../dev/scss/modules/_nav.scss */
 .nav-collapse a {
   color: #fff;
   text-decoration: none;
@@ -217,18 +257,22 @@ a:hover {
   padding: 0.7em 1em;
   float: left;
 }
+/* line 110, ../../dev/scss/modules/_nav.scss */
 .nav-collapse a:hover {
   text-decoration: underline;
 }
 
 @media screen and (min-width: 640px) {
+  /* line 117, ../../dev/scss/modules/_nav.scss */
   .nav-collapse li {
     border-right: 1px solid white;
   }
+  /* line 120, ../../dev/scss/modules/_nav.scss */
   .nav-collapse li:last-of-type {
     border: none;
   }
 
+  /* line 125, ../../dev/scss/modules/_nav.scss */
   .nav-collapse a {
     margin: 0;
     padding: 10px;
@@ -238,6 +282,7 @@ a:hover {
   }
 }
 @media screen and (min-width: 640px) {
+  /* line 141, ../../dev/scss/modules/_nav.scss */
   .nav-collapse ul ul a {
     display: none;
   }
@@ -249,6 +294,7 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
+/* line 161, ../../dev/scss/modules/_nav.scss */
 .nav-toggle {
   position: fixed;
   -webkit-font-smoothing: antialiased;
@@ -267,6 +313,7 @@ a:hover {
   float: right;
 }
 
+/* line 179, ../../dev/scss/modules/_nav.scss */
 .nav-toggle:before {
   color: #202020;
   /* Edit this to change the icon color */
@@ -287,11 +334,13 @@ a:hover {
   left: 0;
 }
 
+/* line 198, ../../dev/scss/modules/_nav.scss */
 .nav-toggle.active::before {
   font-size: 24px;
   content: "x";
 }
 
+/* line 2, ../../dev/scss/modules/_header.scss */
 .header {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -300,21 +349,25 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+/* line 9, ../../dev/scss/core/_mixins.scss */
 .header:before, .header:after {
   content: "";
   display: table;
 }
+/* line 14, ../../dev/scss/core/_mixins.scss */
 .header:after {
   clear: both;
 }
 @media (min-width: 640px) {
+  /* line 2, ../../dev/scss/modules/_header.scss */
   .header {
-    margin-top: 80px;
+    margin-top: 60px;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
 }
+/* line 13, ../../dev/scss/modules/_header.scss */
 .header .logo {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -324,6 +377,7 @@ a:hover {
   margin-left: 0;
   margin-right: 0;
 }
+/* line 16, ../../dev/scss/modules/_header.scss */
 .header .logo img {
   display: block;
   margin: 0 auto;
@@ -331,6 +385,7 @@ a:hover {
   height: auto;
 }
 @media (min-width: 640px) {
+  /* line 13, ../../dev/scss/modules/_header.scss */
   .header .logo {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -345,6 +400,7 @@ a:hover {
     transform: translateY(-50%);
   }
 }
+/* line 30, ../../dev/scss/modules/_header.scss */
 .header .banner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -355,6 +411,7 @@ a:hover {
   margin-right: 0;
 }
 @media (min-width: 640px) {
+  /* line 30, ../../dev/scss/modules/_header.scss */
   .header .banner {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -369,12 +426,14 @@ a:hover {
     transform: translateY(-50%);
   }
 }
+/* line 38, ../../dev/scss/modules/_header.scss */
 .header .banner img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
+/* line 1, ../../dev/scss/modules/_content.scss */
 .post img {
   width: 80px;
   height: 80px;
@@ -383,6 +442,7 @@ a:hover {
   height: auto;
 }
 
+/* line 10, ../../dev/scss/modules/_content.scss */
 .mainContainer {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -390,16 +450,19 @@ a:hover {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px 0 10px;
+  margin-top: 30px;
 }
+/* line 9, ../../dev/scss/core/_mixins.scss */
 .mainContainer:before, .mainContainer:after {
   content: "";
   display: table;
 }
+/* line 14, ../../dev/scss/core/_mixins.scss */
 .mainContainer:after {
   clear: both;
 }
 
+/* line 17, ../../dev/scss/modules/_content.scss */
 .content {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -410,6 +473,7 @@ a:hover {
   margin-right: 0;
 }
 @media (min-width: 640px) {
+  /* line 17, ../../dev/scss/modules/_content.scss */
   .content {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -420,6 +484,7 @@ a:hover {
   }
 }
 
+/* line 25, ../../dev/scss/modules/_content.scss */
 .sidebar {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -430,6 +495,7 @@ a:hover {
   margin-right: 0;
 }
 @media (min-width: 640px) {
+  /* line 25, ../../dev/scss/modules/_content.scss */
   .sidebar {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -440,6 +506,7 @@ a:hover {
   }
 }
 
+/* line 33, ../../dev/scss/modules/_content.scss */
 .post {
   margin: 0 0 20px 0;
   -moz-box-sizing: border-box;
@@ -448,16 +515,20 @@ a:hover {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   padding: 0;
+  border: 1px solid #e0e0e0;
 }
+/* line 9, ../../dev/scss/core/_mixins.scss */
 .post:before, .post:after {
   content: "";
   display: table;
 }
+/* line 14, ../../dev/scss/core/_mixins.scss */
 .post:after {
   clear: both;
 }
+/* line 40, ../../dev/scss/modules/_content.scss */
 .post img {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -466,6 +537,7 @@ a:hover {
   float: left;
   margin-right: 1.69492%;
 }
+/* line 44, ../../dev/scss/modules/_content.scss */
 .post .meta {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -475,19 +547,23 @@ a:hover {
   margin-right: 0;
   padding: 15px;
 }
+/* line 49, ../../dev/scss/modules/_content.scss */
 .post .excerpt {
   display: none;
 }
 @media (min-width: 640px) {
+  /* line 49, ../../dev/scss/modules/_content.scss */
   .post .excerpt {
     display: block;
   }
 }
+/* line 58, ../../dev/scss/modules/_content.scss */
 .post .readmore {
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: right;
 }
 
+/* line 1, ../../dev/scss/modules/_footer.scss */
 footer {
   background-color: #202020;
   padding: 20px;
@@ -495,6 +571,7 @@ footer {
   color: #ffffff;
 }
 
+/* line 8, ../../dev/scss/modules/_footer.scss */
 .footerCont {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -503,14 +580,17 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+/* line 9, ../../dev/scss/core/_mixins.scss */
 .footerCont:before, .footerCont:after {
   content: "";
   display: table;
 }
+/* line 14, ../../dev/scss/core/_mixins.scss */
 .footerCont:after {
   clear: both;
 }
 
+/* line 12, ../../dev/scss/modules/_footer.scss */
 .footerCol {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -521,6 +601,7 @@ footer {
   margin-right: 0;
 }
 @media (min-width: 640px) {
+  /* line 12, ../../dev/scss/modules/_footer.scss */
   .footerCol {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -529,6 +610,7 @@ footer {
     float: left;
     margin-right: 1.69492%;
   }
+  /* line 19, ../../dev/scss/modules/_footer.scss */
   .footerCol:last-of-type {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -537,4 +619,449 @@ footer {
     float: right;
     margin-right: 0;
   }
+}
+
+/* line 1, ../../dev/scss/modules/_sidebar.scss */
+.icons {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+/* line 7, ../../dev/scss/modules/_sidebar.scss */
+.icons h2 {
+  display: block;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* line 13, ../../dev/scss/modules/_sidebar.scss */
+.social {
+  list-style: none;
+  margin-top: 25px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, ../../dev/scss/core/_mixins.scss */
+.social:before, .social:after {
+  content: "";
+  display: table;
+}
+/* line 14, ../../dev/scss/core/_mixins.scss */
+.social:after {
+  clear: both;
+}
+
+/* line 19, ../../dev/scss/modules/_sidebar.scss */
+.social li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 27, ../../dev/scss/modules/_sidebar.scss */
+.social li:last-of-type {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 23.72881%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 32, ../../dev/scss/modules/_sidebar.scss */
+.social li a {
+  -webkit-transition: all 0.2s ease 0s;
+  -moz-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+/* line 46, ../../dev/scss/modules/_sidebar.scss */
+.social a:hover {
+  background-color: #cccccc;
+  background-position: 0px -40px !important;
+  opacity: 1;
+}
+
+/* line 52, ../../dev/scss/modules/_sidebar.scss */
+.facebook a {
+  background: url(../images/icons/facebook.png) no-repeat 0 0;
+}
+
+/* line 53, ../../dev/scss/modules/_sidebar.scss */
+.facebook a:hover {
+  background-color: #3b5998;
+}
+
+/* line 55, ../../dev/scss/modules/_sidebar.scss */
+.twitter a {
+  background: url(../images/icons/twitter.png) no-repeat 0 0;
+}
+
+/* line 56, ../../dev/scss/modules/_sidebar.scss */
+.twitter a:hover {
+  background-color: #48c4d2;
+}
+
+/* line 58, ../../dev/scss/modules/_sidebar.scss */
+.googleplus a {
+  background: url(../images/icons/googleplus.png) no-repeat 0 0;
+}
+
+/* line 59, ../../dev/scss/modules/_sidebar.scss */
+.googleplus a:hover {
+  background-color: #d94a39;
+}
+
+/* line 61, ../../dev/scss/modules/_sidebar.scss */
+.rss a {
+  background: url(../images/icons/rss.png) no-repeat 0 0;
+}
+
+/* line 62, ../../dev/scss/modules/_sidebar.scss */
+.rss a:hover {
+  background-color: #fe9900;
+}
+
+/* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
+/* line 2, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-default {
+  border-radius: 5px;
+  border: 2px solid #000;
+  background: #4c4c4c;
+  color: #fff;
+}
+
+/* Use this next selector to style things like font-size and line-height: */
+/* line 10, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-default .tooltipster-content {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 10px;
+  overflow: hidden;
+}
+
+/* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
+/* line 19, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
+  /* border-color: ... !important; */
+}
+
+/* If you're using the icon option, use this next selector to style them */
+/* line 25, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-icon {
+  cursor: help;
+  margin-left: 4px;
+}
+
+/* This is the base styling required to make all Tooltipsters work */
+/* line 38, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-base {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  z-index: 9999999;
+  pointer-events: none;
+  width: auto;
+  overflow: visible;
+}
+
+/* line 50, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-base .tooltipster-content {
+  overflow: hidden;
+}
+
+/* These next classes handle the styles for the little arrow attached to the tooltip. By default, the arrow will inherit the same colors and border as what is set on the main tooltip itself. */
+/* line 56, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 66, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow span, .tooltipster-arrow-border {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+/* line 72, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-top span, .tooltipster-arrow-top-right span, .tooltipster-arrow-top-left span {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-top: 8px solid;
+  bottom: -7px;
+}
+
+/* line 78, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-top .tooltipster-arrow-border, .tooltipster-arrow-top-right .tooltipster-arrow-border, .tooltipster-arrow-top-left .tooltipster-arrow-border {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-top: 9px solid;
+  bottom: -7px;
+}
+
+/* line 85, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-bottom span, .tooltipster-arrow-bottom-right span, .tooltipster-arrow-bottom-left span {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-bottom: 8px solid;
+  top: -7px;
+}
+
+/* line 91, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-bottom .tooltipster-arrow-border, .tooltipster-arrow-bottom-right .tooltipster-arrow-border, .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-bottom: 9px solid;
+  top: -7px;
+}
+
+/* line 97, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-top span, .tooltipster-arrow-top .tooltipster-arrow-border, .tooltipster-arrow-bottom span, .tooltipster-arrow-bottom .tooltipster-arrow-border {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* line 102, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-top-left span, .tooltipster-arrow-bottom-left span {
+  left: 6px;
+}
+
+/* line 105, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-top-left .tooltipster-arrow-border, .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  left: 5px;
+}
+
+/* line 108, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-top-right span, .tooltipster-arrow-bottom-right span {
+  right: 6px;
+}
+
+/* line 111, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-top-right .tooltipster-arrow-border, .tooltipster-arrow-bottom-right .tooltipster-arrow-border {
+  right: 5px;
+}
+
+/* line 114, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-left span, .tooltipster-arrow-left .tooltipster-arrow-border {
+  border-top: 8px solid transparent !important;
+  border-bottom: 8px solid transparent !important;
+  border-left: 8px solid;
+  top: 50%;
+  margin-top: -7px;
+  right: -7px;
+}
+
+/* line 122, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-left .tooltipster-arrow-border {
+  border-top: 9px solid transparent !important;
+  border-bottom: 9px solid transparent !important;
+  border-left: 9px solid;
+  margin-top: -8px;
+}
+
+/* line 128, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-right span, .tooltipster-arrow-right .tooltipster-arrow-border {
+  border-top: 8px solid transparent !important;
+  border-bottom: 8px solid transparent !important;
+  border-right: 8px solid;
+  top: 50%;
+  margin-top: -7px;
+  left: -7px;
+}
+
+/* line 136, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-arrow-right .tooltipster-arrow-border {
+  border-top: 9px solid transparent !important;
+  border-bottom: 9px solid transparent !important;
+  border-right: 9px solid;
+  margin-top: -8px;
+}
+
+/* Some CSS magic for the awesome animations - feel free to make your own custom animations and reference it in your Tooltipster settings! */
+/* line 146, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-fade {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity;
+}
+
+/* line 154, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-fade-show {
+  opacity: 1;
+}
+
+/* line 158, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-grow {
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 171, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-grow-show {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+/* line 185, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-swing {
+  opacity: 0;
+  -webkit-transform: rotateZ(4deg);
+  -moz-transform: rotateZ(4deg);
+  -o-transform: rotateZ(4deg);
+  -ms-transform: rotateZ(4deg);
+  transform: rotateZ(4deg);
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+}
+
+/* line 198, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-swing-show {
+  opacity: 1;
+  -webkit-transform: rotateZ(0deg);
+  -moz-transform: rotateZ(0deg);
+  -o-transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+  -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -moz-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -ms-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  -o-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+  transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+}
+
+/* line 213, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-fall {
+  top: 0;
+  -webkit-transition-property: top;
+  -moz-transition-property: top;
+  -o-transition-property: top;
+  -ms-transition-property: top;
+  transition-property: top;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+/* line 229, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-fall.tooltipster-dying {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  top: 0px !important;
+  opacity: 0;
+}
+
+/* line 239, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-slide {
+  left: -40px;
+  -webkit-transition-property: left;
+  -moz-transition-property: left;
+  -o-transition-property: left;
+  -ms-transition-property: left;
+  transition-property: left;
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+/* line 255, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-slide.tooltipster-dying {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+  left: 0px !important;
+  opacity: 0;
+}
+
+/* CSS transition for when contenting is changing in a tooltip that is still open. The only properties that will NOT transition are: width, height, top, and left */
+/* line 267, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-content-changing {
+  opacity: 0.5;
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+/* line 278, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-shadow {
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.5);
+  color: #2c2c2c;
+}
+
+/* line 284, ../../dev/scss/modules/_tooltips.scss */
+.tooltipster-shadow .tooltipster-content {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 10px;
 }

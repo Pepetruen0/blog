@@ -45,7 +45,7 @@ module.exports = function(grunt){
                 options: {
                     sassDir: 'dev/scss',
                     cssDir: 'dist/css',
-                    environment: 'production',
+                    environment: 'development',
                     require: ['susy', 'breakpoint'],
                     outputStyle: 'expanded',
                     app: 'stand_alone'
