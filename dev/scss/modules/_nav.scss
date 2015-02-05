@@ -107,20 +107,9 @@
   border-bottom: 1px solid white;
   padding: 0.7em 1em;
   float: left;
-   &:hover {
-     text-decoration: underline;
-   }
 }
 
 @media screen and (min-width: 640px) {
-
-  .nav-collapse li {
-    border-right: 1px solid white;
-
-    &:last-of-type {
-      border: none;
-    }
-  }
 
   .nav-collapse a {
     margin: 0;
@@ -128,6 +117,10 @@
     float: left;
     text-align: center;
     border-bottom: 0;
+
+    &:hover {
+      background-color: #2b81af;
+    }
 
   }
 }

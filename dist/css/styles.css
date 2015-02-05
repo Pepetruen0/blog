@@ -257,22 +257,9 @@ a:hover {
   padding: 0.7em 1em;
   float: left;
 }
-/* line 110, ../../dev/scss/modules/_nav.scss */
-.nav-collapse a:hover {
-  text-decoration: underline;
-}
 
 @media screen and (min-width: 640px) {
-  /* line 117, ../../dev/scss/modules/_nav.scss */
-  .nav-collapse li {
-    border-right: 1px solid white;
-  }
-  /* line 120, ../../dev/scss/modules/_nav.scss */
-  .nav-collapse li:last-of-type {
-    border: none;
-  }
-
-  /* line 125, ../../dev/scss/modules/_nav.scss */
+  /* line 114, ../../dev/scss/modules/_nav.scss */
   .nav-collapse a {
     margin: 0;
     padding: 10px;
@@ -280,9 +267,13 @@ a:hover {
     text-align: center;
     border-bottom: 0;
   }
+  /* line 121, ../../dev/scss/modules/_nav.scss */
+  .nav-collapse a:hover {
+    background-color: #2b81af;
+  }
 }
 @media screen and (min-width: 640px) {
-  /* line 141, ../../dev/scss/modules/_nav.scss */
+  /* line 134, ../../dev/scss/modules/_nav.scss */
   .nav-collapse ul ul a {
     display: none;
   }
@@ -294,7 +285,7 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
-/* line 161, ../../dev/scss/modules/_nav.scss */
+/* line 154, ../../dev/scss/modules/_nav.scss */
 .nav-toggle {
   position: fixed;
   -webkit-font-smoothing: antialiased;
@@ -313,7 +304,7 @@ a:hover {
   float: right;
 }
 
-/* line 179, ../../dev/scss/modules/_nav.scss */
+/* line 172, ../../dev/scss/modules/_nav.scss */
 .nav-toggle:before {
   color: #202020;
   /* Edit this to change the icon color */
@@ -334,7 +325,7 @@ a:hover {
   left: 0;
 }
 
-/* line 198, ../../dev/scss/modules/_nav.scss */
+/* line 191, ../../dev/scss/modules/_nav.scss */
 .nav-toggle.active::before {
   font-size: 24px;
   content: "x";
@@ -637,7 +628,7 @@ footer {
 /* line 13, ../../dev/scss/modules/_sidebar.scss */
 .social {
   list-style: none;
-  margin-top: 25px;
+  margin-top: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1064,4 +1055,19 @@ footer {
   font-size: 14px;
   line-height: 16px;
   padding: 8px 10px;
+}
+
+/* line 1, ../../dev/scss/modules/_single.scss */
+.singlepost {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+}
+/* line 7, ../../dev/scss/modules/_single.scss */
+.singlepost img {
+  width: 250px;
+  height: auto;
+  max-width: 100%;
+  float: left;
+  margin: 0 25px 25px 0;
 }
