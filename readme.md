@@ -13,3 +13,6 @@ Just clone and run npm install so you get the main npm modules. Afterwards, you 
 - Create single post view
 - ~~Fix typography~~
 - Implement vertical rhythm
+
+#Note Note Note
+At this point, Wordpress has been installed on my main development machine. This means that the /build folder has been deprecated and in favor of a directory a level above the main project scope. This is because the project now resides in the themes folder of a wordpress install and everything is starting to build as a normal theme.

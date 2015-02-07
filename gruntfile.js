@@ -14,8 +14,8 @@ module.exports = function(grunt){
                 files: [{
                     expand: true,
                     cwd: 'dev/',
-                    src: ['**/*.html'],
-                    dest: 'dist/'
+                    src: ['**/*.html', '**/*.php'],
+                    dest: '../'
                 }]
             }
         },
@@ -26,7 +26,7 @@ module.exports = function(grunt){
                     expand: true,
                     cwd: './dev/images',
                     src: '{,*/}**/*.{png,jpg,jpeg,svg}',
-                    dest: './dist/images'
+                    dest: '../images'
                 }]
             }
         },
@@ -34,7 +34,7 @@ module.exports = function(grunt){
         uglify: {
             dev: {
                 files: {
-                    'dist/js/scripts.js' : ['dev/javascripts/**/*.js']
+                    '../js/scripts.js' : ['dev/javascripts/**/*.js']
                 }// End files
             } // End dev
         }, // End uglify
@@ -44,7 +44,7 @@ module.exports = function(grunt){
             dev: {
                 options: {
                     sassDir: 'dev/scss',
-                    cssDir: 'dist/css',
+                    cssDir: '../',
                     environment: 'development',
                     require: ['susy', 'breakpoint'],
                     outputStyle: 'expanded',
@@ -77,6 +77,12 @@ module.exports = function(grunt){
             html: {
                 livereload: true,
                 files: ['dev/*.html'],
+                tasks: 'copy:main'
+            },
+
+            php: {
+                livereload: true,
+                files: ['dev/*.php'],
                 tasks: 'copy:main'
             }
 
