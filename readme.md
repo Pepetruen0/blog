@@ -6,7 +6,7 @@ This is a simple blog theme for an upcoming personal Wordpress project. It is be
 Just clone and run npm install so you get the main npm modules. Afterwards, you just need to run grunt with no arguments to start the default watch task.
 
 ##To do:
-- Add a secondary catlist area
+- ~~Rework main menu~~
 - ~~Implement breakpoint~~
 - ~~Add responsiveness~~
 - ~~Fix footer~~
