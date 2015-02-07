@@ -10,7 +10,7 @@ Just clone and run npm install so you get the main npm modules. Afterwards, you 
 - ~~Implement breakpoint~~
 - ~~Add responsiveness~~
 - ~~Fix footer~~
-- Create single post view
+- ~~Create single post view~~
 - ~~Fix typography~~
 - Implement vertical rhythm
 
