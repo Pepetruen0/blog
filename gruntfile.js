@@ -10,14 +10,24 @@ module.exports = function(grunt){
     grunt.initConfig({
 
         copy: {
-            main: {
+            html: {
                 files: [{
                     expand: true,
                     cwd: 'dev/',
-                    src: ['**/*.html', '**/*.php'],
+                    src: ['**/*.html'],
+                    dest: '../'
+                }]
+            },
+
+            php: {
+                files: [{
+                    expand: true,
+                    cwd: 'dev/',
+                    src: ['**/*.php'],
                     dest: '../'
                 }]
             }
+
         },
 
         imagemin: {
@@ -77,13 +87,13 @@ module.exports = function(grunt){
             html: {
                 livereload: true,
                 files: ['dev/*.html'],
-                tasks: 'copy:main'
+                tasks: 'copy:html'
             },
 
             php: {
                 livereload: true,
                 files: ['dev/*.php'],
-                tasks: 'copy:main'
+                tasks: 'copy:php'
             }
 
         } // End watch
